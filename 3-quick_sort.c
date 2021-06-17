@@ -77,5 +77,6 @@ void quick_sort_algorithm(int *array, size_t lo, size_t hi, size_t size)
 
 void quick_sort(int *array, size_t size)
 {
-	quick_sort_algorithm(array, 0, size - 1, size);
+	if (size > 1)
+		quick_sort_algorithm(array, 0, size - 1, size);
 }
